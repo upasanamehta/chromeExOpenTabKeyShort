@@ -7,6 +7,7 @@
     "scripts": ["open_url.js"],
     "persistent": false
   },
+  //"permissions": ["tabs"],
   "commands": {
     "open facebook": {
       "suggested_key": {
@@ -14,15 +15,15 @@
         "mac": "Alt+Shift+B"
       },
       "description": "Opens facebook page" , 
-      "global": true
-    } /*, 
+      
+    } , 
     "open youtube": {
       "suggested_key": {
         "default": "Alt+Shift+Y",
         "mac": "Alt+Shift+Y"
       },
       "description": "Opens youtube page" ,
-      "global": true
+      
     } ,
     "open quora": {
       "suggested_key": {
@@ -30,7 +31,7 @@
         "mac": "Alt+Shift+Q"
       },
       "description": "Opens quora's home page" ,
-      "global": true
+      
     } 
-  } */
+  } 
 }
