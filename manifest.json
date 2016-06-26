@@ -1,0 +1,36 @@
+{
+  "name": "Open multiple windows with keyboard shortcuts",
+  "version": "1.0",
+  "description": "Allows to open you windows with a designated keyboard shortcut.",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["open_url.js"],
+    "persistent": false
+  },
+  "commands": {
+    "open facebook": {
+      "suggested_key": {
+        "default": "Alt+Shift+B",
+        "mac": "Alt+Shift+B"
+      },
+      "description": "Opens facebook page" , 
+      "global": true
+    } /*, 
+    "open youtube": {
+      "suggested_key": {
+        "default": "Alt+Shift+Y",
+        "mac": "Alt+Shift+Y"
+      },
+      "description": "Opens youtube page" ,
+      "global": true
+    } ,
+    "open quora": {
+      "suggested_key": {
+        "default": "Alt+Shift+Q",
+        "mac": "Alt+Shift+Q"
+      },
+      "description": "Opens quora's home page" ,
+      "global": true
+    } 
+  } */
+}
