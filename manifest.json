@@ -13,26 +13,28 @@
   "commands": {
     "open facebook": {
       "suggested_key": {
-        "default": "Alt+Shift+B",
-        "mac": "Alt+Shift+B"
+        "default": "Ctrl+Shift+8",
+        "mac": "Ctrl+Shift+8"
       },
-      "description": "Opens facebook page" 
-     // "global": true
+      "description": "Opens facebook page" ,
+      "global": true
     } , 
     "open youtube": {
       "suggested_key": {
-        "default": "Alt+Shift+Y",
-        "mac": "Alt+Shift+Y"
+        "default": "Ctrl+Shift+9",
+        "mac": "Ctrl+Shift+9"
       },
-      "description": "Opens youtube page" 
+      "description": "Opens youtube page" ,
+      "global": true
       
     } ,
     "open quora": {
       "suggested_key": {
-        "default": "Alt+Shift+Q",
-        "mac": "Alt+Shift+Q"
+        "default": "Ctrl+Shift+0",
+        "mac": "Ctrl+Shift+0"
       },
-      "description": "Opens quora's home page" 
+      "description": "Opens quora's home page" ,
+      "global": true
       
     } 
   } 
