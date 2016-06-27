@@ -11,7 +11,14 @@ chrome.commands.onCommand.addListener(function(command) {
    }
     else {
        var facebookURL = "https://www.facebook.com/";
-       chrome.tabs.create({ url: facebookURL });
+       chrome.windows.getLastFocused({}, function(window){
+        console.log(window.id);
+        chrome.windows.update(window.id , {focused : true } , function(){
+          chrome.tabs.create({ url: facebookURL });
+        });
+
+       });
+       
    }
 });
 	}
@@ -26,7 +33,14 @@ chrome.commands.onCommand.addListener(function(command) {
             }
             else {
                 var youtubeURL = "https://www.youtube.com/";
-                chrome.tabs.create({ url: youtubeURL });
+                chrome.windows.getLastFocused({}, function(window){
+        console.log(window.id);
+        chrome.windows.update(window.id , {focused : true } , function(){
+          chrome.tabs.create({ url: youtubeURL });
+        });
+
+       });
+                
             }
         });
 
@@ -42,7 +56,14 @@ chrome.commands.onCommand.addListener(function(command) {
    }
     else {
        var quoraURL = "https://www.quora.com/";
-       chrome.tabs.create({ url: quoraURL });
+       chrome.windows.getLastFocused({}, function(window){
+        console.log(window.id);
+        chrome.windows.update(window.id , {focused : true } , function(){
+          chrome.tabs.create({ url: quoraURL });
+        });
+
+       });
+       
    }
 });
 } 
