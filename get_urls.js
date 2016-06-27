@@ -1,10 +1,10 @@
 chrome.commands.onCommand.addListener(function(command) {
 	if(command == 'open facebook'){
  	
- 		chrome.tabs.query({title: "Facebook"}, function(tabs){
+ 		chrome.tabs.query({title: "*Facebook*"}, function(tabs){
    if (tabs.length){
        console.log("found");
-       chrome.windows.update(tabs[0].windowId , {focused : true} , function(){
+       chrome.windows.update(tabs[0].windowId , {focused : true } , function(){
        	chrome.tabs.update(tabs[0].id, {selected: true});
        });
        
@@ -20,7 +20,7 @@ chrome.commands.onCommand.addListener(function(command) {
         chrome.tabs.query({title: "*YouTube*"}, function(tabs){
             if (tabs.length){
                 console.log("found");
-                chrome.windows.update(tabs[0].windowId , {focused : true} , function(){
+                chrome.windows.update(tabs[0].windowId , {focused : true } , function(){
                 chrome.tabs.update(tabs[0].id, {selected: true});
             });
             }
@@ -36,7 +36,7 @@ chrome.commands.onCommand.addListener(function(command) {
  		chrome.tabs.query({title: "*Quora*"}, function(tabs){
    if (tabs.length){
        console.log("found");
-       chrome.windows.update(tabs[0].windowId , {focused : true} , function(){
+       chrome.windows.update(tabs[0].windowId , {focused : true } , function(){
        chrome.tabs.update(tabs[0].id, {selected: true});
    });
    }
